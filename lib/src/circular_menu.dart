@@ -257,7 +257,11 @@ class CircularMenuState extends State<CircularMenu>
     return Stack(
       children: <Widget>[
         widget.backgroundWidget ?? Container(),
-        ..._buildMenuItems(),
+        ...GestureDetector(
+            onTap: () {
+              print('Container tapped!');
+            },
+            child: _buildMenuItems()),
         _buildMenuButton(context),
       ],
     );
