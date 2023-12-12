@@ -9,7 +9,8 @@ class CircularMenu extends StatefulWidget {
   final GlobalKey<CircularMenuState>? key;
 
   /// list of CircularMenuItem contains at least two items.
-  final List<CircularMenuItem> items;
+  // final List<CircularMenuItem> items;
+  final List items;
 
   /// menu alignment
   final AlignmentGeometry alignment;
